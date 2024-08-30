@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 4 WT</title>
+</head>
+<body>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+<h1>[A] STUDENT REGISTRATION </h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="mobileno">Mobile No:</label></td>
+                <td><input type="tel" id="mobileno" name="mobileno" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="nationality">Nationality:</label></td>
+                <td><input type="text" id="nationality" name="nationality" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="degree">Degree:</label></td>
+                <td>
+                    <select id="degree" name="degree" required>
+                        <option value="" disabled selected>Select Degree</option>
+                        <option value="bachelor">Bachelor</option>
+                        <option value="master">Master</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cpi">CPI:</label></td>
+                <td><input type="number" id="cpi" name="cpi" step="0.01" min="0" max="10" required></td>
+            </tr>
+            <tr>
+                <td><label for="university">University:</label></td>
+                <td><input type="text" id="university" name="university" required></td>
+            </tr>
+            <tr>
+                <td><label for="passingyear">Passing Year:</label></td>
+                <td>
+                    <select id="passingyear" name="passingyear" required>
+                        <option value="" disabled selected>Select Year</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h1>[B] COVID VACCINE REGISTRATION FORM </h1>
+     <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="firstname">First Name:</label></td>
+                <td><input type="text" id="firstname" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name:</label></td>
+                <td><input type="text" id="lastname" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td><label for="aadhar">Aadhar Number:</label></td>
+                <td><input type="text" id="aadhar" name="aadhar" required></td>
+            </tr>
+            <tr>
+                <td><label for="vaccine">Vaccine Name:</label></td>
+                <td>
+                    <select id="vaccine" name="vaccine" required>
+                        <option value="" disabled selected>Select Vaccine</option>
+                        <option value="covaxin">Covaxin</option>
+                        <option value="covishield">Covishield</option>
+                        <option value="sputnikv">Sputnik V</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="center">Vaccination Center:</label></td>
+                <td>
+                    <select id="center" name="center" required>
+                        <option value="" disabled selected>Select Center</option>
+                        <option value="center1">Center 1</option>
+                        <option value="center2">Center 2</option>
+                        <option value="center3">Center 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dateofdose">Date of Dose:</label></td>
+                <td><input type="date" id="dateofdose" name="dateofdose" required></td>
+            </tr>
+            <tr>
+                <td><label for="dosenumber">Dose Number:</label></td>
+                <td>
+                  <input type="text" id="doseno" name="doseno" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+    <h1>[C] CREATE ACCOUNT </h1>
+
+     <form action="#" method="post" enctype="multipart/form-data">
+        <table>
+            <!-- First Name and Last Name -->
+            <tr>
+                <td>
+                    <label for="firstname">First Name:</label><br>
+                    <input type="text" id="firstname" name="firstname" required>
+                </td>
+                <td>
+                    <label for="lastname">Last Name:</label><br>
+                    <input type="text" id="lastname" name="lastname" required>
+                </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td colspan="2">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required style="width: 100%;">
+                </td>
+            </tr>
+
+            <!-- Password and Confirm Password -->
+            <tr>
+                <td>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required>
+                </td>
+                <td>
+                    <label for="confirm-password">Confirm Password:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </td>
+            </tr>
+
+            <!-- Gender and Hobbies -->
+            <tr>
+                <td>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+                <td>
+                    <label>Hobbies:</label><br>
+                    <input type="checkbox" id="music" name="hobbies" value="music">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="travel" name="hobbies" value="travel">
+                    <label for="travel">Travel</label>
+                    <input type="checkbox" id="movies" name="hobbies" value="movies">
+                    <label for="movies">Movies</label>
+                </td>
+            </tr>
+
+            <!-- Source of Income and Income Range -->
+            <tr>
+                <td>
+                    <label for="income-source">Source of Income:</label><br>
+                    <select id="income-source" name="income-source" required>
+                        <option value="" disabled selected>Select Source</option>
+                        <option value="job">Job</option>
+                        <option value="business">Business</option>
+                        <option value="investment">Investment</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="income-range">Income Range:</label><br>
+                    <input type="range" id="income-range" name="income-range" min="0" max="20000" step="1000" required>
+                    <span id="income-range-value">Up to 20k</span>
+                </td>
+            </tr>
+
+            <!-- Profile Picture and Age -->
+            <tr>
+                <td>
+                    <label for="profile-picture">Profile Picture:</label><br>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+                </td>
+                <td>
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="1" required>
+                </td>
+            </tr>
+
+            <!-- Bio -->
+            <tr>
+                <td colspan="2">
+                    <label for="bio">Bio:</label><br>
+                    <textarea id="bio" name="bio" rows="4" cols="50" required></textarea>
+                </td>
+            </tr>
+
+            <!-- Create Button -->
+            <tr>
+                <td colspan="2" style="text-align: right;">
+                    <button type="submit">Create</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+
+</body>
+</html>

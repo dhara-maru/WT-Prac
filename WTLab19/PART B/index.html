@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Pricing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link {
+      margin-right: 15px;
+    }
+    .main-section {
+      text-align: center;
+      margin: 50px 0;
+    }
+    .pricing-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+    .pricing-cards .card {
+      text-align: center;
+      width: 300px;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+    }
+    .footer .logo-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer .logo-column img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+    .footer .footer-links h6 {
+      margin-bottom: 20px;
+    }
+    .footer .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer .footer-links ul li {
+      margin-bottom: 10px;
+    }
+    .footer .footer-links a {
+        text-decoration:none;
+        color:black;
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CompanyName</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enterprise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="main-section">
+    <h1 class="display-4">Pricing</h1>
+    <p class="lead">Explore our pricing options that suit your needs. We offer a variety of plans to meet every requirement, ensuring that you get the best value for your investment.Explore our pricing options that suit your needs. We offer a variety of plans to meet.Explore our pricing options that suit your needs. We offer a variety of plans to meet.</p>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="pricing-cards">
+    <div class="card">
+      <h5 class="card-header">Featured</h5>
+      <div class="card-body">
+        <h5 class="card-title">Basic Plan</h5>
+        <p class="card-text">Our basic plan is perfect for individuals who need essential features at an affordable price. Get started with all the core tools you need.</p>
+        <a href="#" class="btn btn-outline-secondary">Choose Plan</a>
+      </div>
+    </div>
+    <div class="card">
+      <h5 class="card-header">Popular</h5>
+      <div class="card-body">
+        <h5 class="card-title">Standard Plan</h5>
+        <p class="card-text">Our most popular plan offers advanced features and greater flexibility. Ideal for growing businesses that require more from their tools.</p>
+        <a href="#" class="btn btn-primary">Choose Plan</a>
+      </div>
+    </div>
+    <div class="card">
+      <h5 class="card-header">Premium</h5>
+      <div class="card-body">
+        <h5 class="card-title">Pro Plan</h5>
+        <p class="card-text">The ultimate plan for enterprises needing robust features, customization, and dedicated support. Take your business to the next level.</p>
+        <a href="#" class="btn btn-primary">Choose Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 logo-column">
+          <img src="https://img.icons8.com/?size=50&id=g9mmSxx3SwAI&format=png&color=000000" alt="Company Logo">
+          <p>&copy; 2024</p>
+        </div>
+        <div class="col-md-3 footer-links">
+          <h6>Features</h6>
+          <ul>
+            <li><a href="#">Cool Stuff</a></li>
+            <li><a href="#">Random Feature</a></li>
+            <li><a href="#">Another</a></li>
+            <li><a href="#">Feature Link</a></li>
+            <li><a href="#">Second Link</a></li>
+            <li><a href="#">Third Stuff</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-links">
+          <h6>Resources</h6>
+          <ul>
+            <li><a href="#">Resource</a></li>
+            <li><a href="#">Name</a></li>
+            <li><a href="#">Link Another</a></li>
+            <li><a href="#">Final Link</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-links">
+            <h6>About</h6>
+            <ul>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">None</a></li>
+            </ul>
+          </div>
+
+
+    </div>
+</footer>
+</body>
+</html>

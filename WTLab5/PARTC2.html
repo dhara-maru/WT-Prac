@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #0074c2;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Navbar styles */
+.navbar {
+    float: left;
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-bottom: 1rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 20%;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+.ads {
+    /* Add your ad styling here */
+}
+
+/* Content styles */
+.content {
+    width: 75%;
+    background-color: #fff;
+    padding: 2rem;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.bg-image {
+    /* Set your background image properties */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+/* Newsletter styles */
+.newsletter input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    background-color: #0074c2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add any additional styling as needed */
+
+   </style>
+    <title>Flutter Dev Company</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Flutter Dev Company</h1>
+        <p>Your partner in creating amazing Flutter apps!</p>
+    </header>
+
+    <nav class="navbar">
+        <!-- Navbar content here -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <!-- Sidebar content here -->
+            <div class="ads">
+                <p>Ad space</p>
+                <!-- Add your ads here -->
+            </div>
+        </aside>
+
+        <main class="content">
+            <h1>Flutter Development Company</h1>
+            <p>Creating beautiful apps with Flutter.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo vel libero tincidunt aliquet.</p>
+            <img src="background.jpg" alt="App development" class="bg-image">
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="flutter-logo.png" alt="Flutter logo">
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="newsletter">
+                <p>Subscribe to our newsletter:</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

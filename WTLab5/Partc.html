@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Development Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background-color: #02569B;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .logo {
+        width: 50px;
+        vertical-align: middle;
+    }
+    
+    .container {
+        display: flex;
+        margin: 0;
+    }
+    
+    .navbar {
+        width: 200px;
+        background-color: #03408F;
+        padding: 20px;
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        color: white;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .navbar ul li {
+        margin-bottom: 20px;
+    }
+    
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        display: block;
+        transition: color 0.3s;
+    }
+    
+    .navbar ul li a:hover {
+        color: #0288D1;
+    }
+    
+    .main-content {
+        flex-grow: 1;
+        padding: 60px;
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        margin-left: 220px;
+        margin-right: 220px;
+        border-radius: 15px;
+        animation: fadeIn 2s;
+    }
+    
+    .main-content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .subtext {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    
+    .description {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 600px;
+    }
+    
+    .sidebar {
+        width: 200px;
+        background-color: #0288D1;
+        padding: 20px;
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        color: white;
+    }
+    
+    .sidebar h3 {
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    
+    .ad {
+        background-color: #03408F;
+        margin-bottom: 20px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+    }
+    
+    .ad:hover {
+        background-color: #0277BD;
+    }
+    
+    footer {
+        background-color: #02569B;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .footer-logo img {
+        width: 60px;
+    }
+    
+    .footer-links ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-links ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .footer-links ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .newsletter input[type="email"] {
+        padding: 10px;
+        width: 200px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .newsletter button {
+        padding: 10px 20px;
+        background-color: #03408F;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .newsletter button:hover {
+        background-color: #0288D1;
+    }
+    
+    .footer-copy {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="flutter-logo.png" alt="Flutter Logo" class="logo">
+        <h1>Welcome to Flutter Dev Co.</h1>
+    </header>
+
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <h2>Build Beautiful Apps with Flutter</h2>
+            <p class="subtext">Your vision, our expertise</p>
+            <p class="description">At Flutter Dev Co., we create stunning, high-performance mobile apps that engage
+                users and drive business growth. Our team of experienced developers brings your ideas to life with the
+                power of Flutter.</p>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Advertisement</h3>
+            <div class="ad">Ad 1</div>
+            <div class="ad">Ad 2</div>
+            <div class="ad">Ad 3</div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="footer-logo.png" alt="Footer Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <p class="footer-copy">© 2024 Flutter Dev Co. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
