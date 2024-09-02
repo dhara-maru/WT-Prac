@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <style>
+        [data-myh2="heading2"] {
+            color: green;
+        }
+
+
+        .redclass {
+            color: red;
+        }
+
+        .greenclass {
+            color: green;
+        }
+
+        [data-myh3] {
+            color: red;
+        }
+
+        [class~="special"] {
+            color: blue;
+        }
+
+        [lang|="en-US"] {
+            font-size: 60px;
+        }
+
+        [href$=".com"] {
+            font-weight: bolder;
+        }
+
+        [href^="https"] {
+            font-weight: lighter;
+        }
+
+        [data-info="example"] {
+            color: pink;
+
+        }
+
+        .myexampleclass {
+            color: blueviolet;
+        }
+
+        #myexampleid {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="greenclass redclass"> this is my data-myh2 custom attr. </h2>
+    <h2 data-myh3="heading3"> this is my data-myh3 custom attr. </h2>
+
+    <p class="myspecial special"> this is a paragraph which includes special attr.</p>
+    <a href="https//www.google.com"> this is a link which has https at the start.</a><br>
+    <a href="https//www.google.com"> this is a link which has .com at the end.</a>
+
+    <p lang="en-US"> this is a paragraph which is in English (US) lang.</p>
+    <p lang="en-UK"> this is a paragraph which is in English (UK) lang.</p>
+
+    <h2 data-info="example" class="myexampleclass" id="myexampleid"> this is my data-myh3 custom attr. </h2>
+</body>
