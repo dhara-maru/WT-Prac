@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Part B lab 5</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: "Noto Sans", sans-serif;
+      }
+      nav {
+        width: 100%;
+        height: 71px;
+
+        box-sizing: border-box;
+      }
+      .logo {
+        width: 19%;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 30px;
+
+        padding: 15px;
+      }
+      div#logotext {
+    text-align: center;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+      ul.links {
+    display: flex;
+    position: relative;
+    top: -34px;
+    color: black;
+    font-size: 17px;
+    left: 36%;
+}
+      li.link {
+        margin-right: 63px;
+        list-style: none;
+        margin-top: -34px;
+        padding: -20px 0px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a.linkbutton {
+        padding: 10px 19px;
+        border: 1px solid;
+        font-size: 14px;
+        margin: -14px;
+        border-radius: 30px;
+      }
+      a.linkbutton.a {
+        border: none;
+        color: black;
+        /* padding: 5px 8px; */
+        background: cornflowerblue;
+        color: white;
+      }                 
+      a.linkbutton.b {
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+/* sidebar  */
+.sidebar {
+    height: 36rem;
+    width: 28%;
+    padding: 18px;
+    border: 2px solid;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><div id="logotext">PyPlus</div></div>
+      <ul class="links">
+        <li class="link"><a href="">Home</a></li>
+        <li class="link"><a href="">About</a></li>
+        <li class="link"><a href="">Courses</a></li>
+        <li class="link"><a href="">Subscription</a></li>
+        <li class="link"><a href="">Contact</a></li>
+
+        <li class="link"><a href="" class="linkbutton a">Sign Up</a></li>
+        <li class="link"><a href="" class="linkbutton b">Login</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="main">
+        <div class="sidebar">
+          <div class="item"><img src="icon.png" alt="">Test Questions</div>
+          <div class="item"><img src="icon.png" alt="">Django Courses</div>
+          <div class="item"><img src="icon.png" alt="">Flask Tutorials</div>
+          <div class="item"><img src="icon.png" alt="">Community</div>
+          <div class="item"><img src="icon.png" alt="">Docs Help</div>
+        </div>
+</div><!--main div-->  
+  </body>
+</html>
