@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5C Layout Design</title>
+   <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    padding: 5px; 
+}
+
+.header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    flex-shrink: 0;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    margin-bottom: 5px; 
+}
+
+.navigation {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    flex: 1;
+    margin-right: 5px; 
+}
+
+
+.content {
+    background-color: yellow;
+    padding: 20px;
+    flex: 4;
+    margin-right: -148px;
+}
+
+.sidebar {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    flex-shrink: 0;
+    height: 300px;
+    align-self: flex-start; 
+}
+
+
+.footer {
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+   </style>
+</head>
+<body>
+
+    <div class="container">
+      
+        <header class="header">Header</header>
+
+      
+        <div class="main">
+            <nav class="navigation">Navigation</nav>
+            <section class="content">Content</section>
+            <aside class="sidebar">Sidebar</aside>
+        </div>
+
+       
+        <footer class="footer">Footer</footer>
+    </div>
+
+</body>
+</html>
