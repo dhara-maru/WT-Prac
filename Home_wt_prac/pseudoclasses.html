@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes and Pseudo-Elements Example</title>
+    <style>
+        /* Pseudo-classes */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        input:focus {
+            border: 2px solid blue;
+        }
+
+        input:disabled {
+            background-color: lightgray;
+        }
+
+        li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        li:nth-child(even) {
+            background-color: #d0d0d0;
+        }
+
+        p:first-child {
+            font-weight: bold;
+        }
+
+        p:last-child {
+            font-style: italic;
+        }
+
+        p:nth-of-type(2) {
+            color: darkred;
+        }
+
+        div:hover {
+            background-color: lightblue;
+        }
+
+        /* Pseudo-elements */
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p::before {
+            content: "Note: ";
+            color: blue;
+        }
+
+        p::after {
+            content: " (end of paragraph)";
+            color: green;
+        }
+
+       
+        a:hover::before {
+            content: "Hovered! ";
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo-Classes and Pseudo-Elements Example</h1>
+
+    <a href="https://example.com" target="_blank">Visit Example.com</a>
+
+    <br><br>
+
+    <input type="text" placeholder="Focus on me">
+    <br><br>
+    <input type="text" disabled placeholder="I'm disabled">
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+    </ul>
+
+    <div>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the last paragraph.</p>
+    </div>
+
+</body>
+</html>
