@@ -1,0 +1,54 @@
+
+
+<html>
+    <head>
+        <title>Calculator with switch</title>
+       
+    </head>
+    </head>
+    <body>
+      
+
+      <script>
+        
+
+let sum, sub, mul, div;
+
+let a = Number(prompt("Enter the first number"));
+let b = Number(prompt("Enter the second number"));
+let op = String(prompt("Enter the operator"));
+
+switch(op)
+{
+    case '+':
+        sum = a+b;
+        document.write("sum = "+sum);
+        console.log(sum);
+        break;
+    case '-':
+        sub = a-b;
+        document.write("sub = "+sub);
+        console.log(sub);
+        break;
+    case '*':
+        mul = a*b;
+        document.write("mul = "+mul);
+        console.log(mul);
+        break;
+    case '/':
+        div = a/b;
+        document.write("division = "+div);
+        console.log(div);
+        break;
+    default:
+        document.write("Invalid operator");
+
+}
+
+
+
+
+      
+      </script>
+    </body>
+</html>

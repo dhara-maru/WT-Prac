@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc using if else</title>
+</head>
+<body>
+    <script>
+        let sum,sub,mul,div;
+
+        
+let a = Number(prompt("Enter the first number"));
+let b = Number(prompt("Enter the second number"));
+let op = String(prompt("Enter the operator"));
+
+if(op == '+'){
+sum = a+b;
+document.write(sum);
+console.log(sum);
+}
+else if(op == '-'){
+sub = a-b;
+document.write(sub);
+console.log(sub);
+
+}  
+else if(op == '*'){
+mul = a*b;
+document.write(mul);
+console.log(mul);
+
+}  
+else if(op == '/'){
+div = a/b;
+document.write(div);
+console.log(div);
+
+}  
+else {
+document.write("invalid input");
+console.log("invalid input");
+}
+
+
+
+
+  </script>
+</body>
+</html>
