@@ -7,27 +7,22 @@
 </head>
 <body>
     <script>
-        let r1 = Number(prompt("Enter the starting number of the range: "));
-        let r2 = Number(prompt("Enter the ending number of the range: "));
+       let r1= Number(prompt("starting : "))
+       let r2= Number(prompt("ending : "))
 
-        for (let i = r1; i <= r2; i++) {
-            let isPrime = true; 
-
-         
-            for (let j = 2; j < i; j++) {
-                if (i % j === 0) {
-                    isPrime = false; // If divisible by any number, it's not prime
-                    break; // No need to check further
+       for(i=r1; i<=r2; i++){
+            let prime = true;
+            for(j=2; j<i; j++){
+                if(i % j == 0){
+                    prime = false;
                 }
+                
             }
 
-            if (isPrime) {
-                console.log(i); // Print the prime number
+            if(prime){
+                console.log(i)
             }
-        }
-
-    
-
+       }
     </script>
 </body>
 </html>
