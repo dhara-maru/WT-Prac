@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 8 c7| string and substring</title>
+</head>
+<body>
+    <script>
+        let str = String(prompt("Enter a string which contains two 'a':"))
+
+        let first = str.indexOf('a')
+        let last = str.lastIndexOf('a')
+
+        console.log(first)
+        console.log(last)
+
+        let newstr = str.substring(first+1,last) //exclude first 'a'
+        console.log(newstr)
+    </script>
+</body>
+</html>
