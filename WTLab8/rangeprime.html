@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab8 Q2 | Range Prime</title>
+</head>
+<body>
+    <script>
+        let r1 = Number(prompt("Enter the starting number of the range: "));
+        let r2 = Number(prompt("Enter the ending number of the range: "));
+
+        for (let i = r1; i <= r2; i++) {
+            let isPrime = true; 
+
+         
+            for (let j = 2; j < i; j++) {
+                if (i % j === 0) {
+                    isPrime = false; // If divisible by any number, it's not prime
+                    break; // No need to check further
+                }
+            }
+
+            if (isPrime) {
+                console.log(i); // Print the prime number
+            }
+        }
+
+    
+
+    </script>
+</body>
+</html>
