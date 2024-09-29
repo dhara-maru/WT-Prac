@@ -7,22 +7,25 @@
 </head>
 <body>
     <script>
-        let num = parseInt(prompt("Enter a number: ")); 
-        let originalNum = num; 
-        let reversedNum = 0;
-        
-     
-        while (num > 0) {
-            let lastDigit = num % 10; 
-            reversedNum = reversedNum * 10 + lastDigit;  
-            num = num / 10;  
-        }
-        
-      
-        if (originalNum === reversedNum) {
-            alert(originalNum + " is a palindrome.");
+        let num = prompt("Enter The Number Here : ");
+        num = Number.parseInt(num);
+        let temp = num;
+        if (isNaN(num)) {
+          console.log("Please Enter A Valid Number!");
         } else {
-            alert(originalNum + " is not a palindrome.");
+          let reverseNum = 0;
+          let digit = 0;
+          while (num > 0) {
+            digit = num % 10;
+            reverseNum = reverseNum * 10 + digit;
+            num = Math.floor(num / 10);
+          }
+          console.log(reverseNum, "Is Reversed!");
+          if (temp == reverseNum) {
+            console.log("Is Palindrome Number!");
+          } else {
+            console.log("Not A Palindrome Number");
+          }
         }
     </script>
 </body>
