@@ -6,25 +6,20 @@
     <title>Prime number</title>
 </head>
 <body>
-    <script>
-let flag = false;
-let num = prompt("enter number : ");
+    <script>let num = Number(prompt("Enter a number to check if it's prime: "));
 
-for(var i=1; i<=10; i++){
-if(num % 2 !=0){
-	flag = true;
-}
-else{
-flag = false;
-
-}
-}
-if(flag){
-document.write("number is prime");
-}
-else{
-document.write("number is not prime");
-}
+        if (num <= 1) {
+            console.log(num + " is not a prime number.");
+        } else {
+            let isPrime = true;
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            console.log(num + (isPrime ? " is a prime number." : " is not a prime number."));
+        }
     </script>
 </body>
 </html>
