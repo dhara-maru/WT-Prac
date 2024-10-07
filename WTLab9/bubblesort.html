@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubble sort</title>
+</head>
+<body>
+    <script>
+        let nums = new Array();
+        for(i=0; i<=5; i++){
+            nums[i] = prompt("Enter array elem "+(i+1)+" : ")
+        }
+
+        document.write("Original array : <br>")
+        for(i=0; i<=5; i++){
+            document.write(nums[i]+"\t")
+        }
+
+        for(i=0; i<nums.length; i++){
+            for(j=0; j<nums.length-1; j++){
+                if(nums[i] > nums[i+1]){
+                    let temp = nums[i];
+                    nums[i] = nums[i+1];
+                    nums[i+1] = temp;
+                }
+            }
+        }
+
+        document.write("Sorted array : <br>")
+        for(i=0; i<=5; i++){
+            document.write(nums[i]+"\t")
+        }
+    </script>
+</body>
+</html>
