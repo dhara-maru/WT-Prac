@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple To do in JS</title>
+        <style>
+            button{
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter Task" id="task">
+        <button id="addbtn" onclick="addtodo()">Add Task</button>
+        <ul id="myul"></ul>
+
+        <script>
+        function addtodo(){
+            
+            const task = document.getElementById("task").value.trim()
+            if(task != ''){
+                const liitem = document.createElement('li')
+                const removebtn = document.createElement('button')
+                removebtn.textContent = "Remove Task";
+            
+                liitem.textContent = task
+                const myitemfull = document.getElementById('myul').appendChild(liitem); // Append the new list item to the UL
+                myitemfull.append(removebtn);
+
+                removebtn.addEventListener('click', function() {
+                    liitem.remove(); 
+                });
+
+
+                document.getElementById("task").value = "";
+            }
+            else{
+                alert("Please enter a todo task!")
+            }
+            
+        }
+    </script>
+    </body>
+</html>
