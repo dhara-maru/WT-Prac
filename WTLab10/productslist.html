@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products List</title>
+</head>
+<body>
+    <h1>Products List</h1>
+    <ul id="productList"></ul>
+
+    <script>
+     
+        const products = [
+            "Laptop",
+            "Smartphone",
+            "Tablet",
+            "Headphones",
+            "Smartwatch"
+        ];
+
+
+        function displayProducts() {
+            const listElement = document.getElementById('productList');
+            for (let i = 0; i < products.length; i++) {
+                const listItem = document.createElement('li');
+                listItem.textContent = products[i];
+                listElement.appendChild(listItem);
+            }
+        }
+
+       
+        displayProducts();
+  
+    </script>
+</body>
+</html>
