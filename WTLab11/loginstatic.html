@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 2 : Static Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        #alertbox {
+            margin-top: 10px;
+            font-weight: bold;
+            color: red;
+        }
+
+        #alertbox.success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <input type="text" id="uname" placeholder="Enter username">
+    <input type="password" id="pwd" placeholder="Enter password">
+    <button onclick="checklogin()">Login</button>
+
+    <div id="alertbox"></div>
+
+    <script>
+        function checklogin() {
+            let uname = document.getElementById('uname').value;
+            let pwd = document.getElementById('pwd').value;
+            let restag = document.getElementById('alertbox');
+
+            if (uname !== "dhara" || pwd !== '1234') {
+                restag.textContent = "Invalid Username or Password";
+                restag.classList.remove('success'); 
+            } else {
+                restag.textContent = "Logged in successfully!";
+                restag.classList.add('success'); 
+            }
+        }
+    </script>
+</body>
+</html>
