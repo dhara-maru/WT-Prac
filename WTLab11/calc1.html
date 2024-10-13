@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 Calc</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #resultdiv {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input type="text" id="n1" placeholder="Enter value 1">
+    <input type="text" id="n2" placeholder="Enter value 2">
+
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">-</button>
+    <button onclick="calc('*')">*</button>
+    <button onclick="calc('/')">/</button>
+
+    <div>Result: <span id="resultdiv"></span></div>
+
+    <script>
+        function calc(operator) {
+            let n1 = parseInt(document.getElementById('n1').value);
+            let n2 = parseInt(document.getElementById('n2').value);
+            let res = 0;
+
+            if (operator === '+') {
+                res = n1 + n2;
+            } else if (operator === '-') {
+                res = n1 - n2;
+            } else if (operator === '*') {
+                res = n1 * n2;
+            } else if (operator === '/') {
+                if (n2 === 0) {
+                    alert("Can't divide by zero");
+                    return;
+                }
+                res = n1 / n2;
+            }
+
+            document.getElementById('resultdiv').textContent = res;
+            document.getElementById('n1').value = '';
+            document.getElementById('n2').value = '';
+        }
+    </script>
+</body>
+</html>
