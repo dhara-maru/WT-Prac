@@ -1,0 +1,96 @@
+ body {
+     background-color: #ffffff;
+     color: #333;
+     font-family: 'Arial', sans-serif;
+
+ }
+
+ .btn-primary {
+     background-color: #00918f;
+     border: none;
+ }
+
+ ::-webkit-scrollbar {
+     width: 8px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: lightblue;
+     border: 2px dashed blue;
+     border-radius: 10px;
+ }
+
+ ::-webkit-scrollbar-track {
+     background: transparent;
+ }
+
+ html {
+     scrollbar-width: thin;
+     scrollbar-color: lightblue transparent;
+ }
+
+ ::-moz-scrollbar-thumb {
+     background: repeating-linear-gradient(45deg,
+             blue,
+             blue 5px,
+             lightblue 5px,
+             lightblue 10px);
+     border-radius: 10px;
+ }
+
+
+
+
+
+ .navbar {
+     background-color: white;
+     padding: 15px;
+ }
+
+ .navbar a {
+     color: black;
+ }
+
+ .navbar-dark .navbar-nav .nav-link {
+     color: #333;
+ }
+
+ .navbar-dark .navbar-nav .nav-link:hover {
+     color: #007bff;
+ }
+
+ .btn-primary {
+     background-color: #1d1d1d;
+     border: none;
+ }
+
+ .btn-primary:hover {
+     background-color: #00918f;
+ }
+
+ section {
+     padding: 100px 0;
+     position: relative;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .footer {
+     text-align: center;
+     padding: 20px 0;
+     background-color: #f8f9fa;
+     color: #333;
+ }
+
+ @media (max-width: 768px) {
+     h1, h2, h3 {
+         font-size: 1.8rem;
+     }
+
+     p {
+         font-size: 1rem;
+     }
+ }

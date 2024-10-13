@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #333;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      background-color: white;
+      padding: 15px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #000;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #007bff;
+    }
+
+    .intro-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 50px 0; 
+      animation: fadeIn 1s forwards;
+    }
+
+    .text-container {
+      opacity: 0;
+      animation: slideInLeft 0.75s forwards;
+    }
+
+    .img-container {
+      opacity: 0;
+      animation: slideInRight 0.75s forwards;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #00918f;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #00918f;
+      color: #fff;
+      position: relative;
+    }
+
+    @keyframes slideInLeft {
+      0% { transform: translateX(-50%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInRight {
+      0% { transform: translateX(50%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-25px); 
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      
+      .img-container img {
+        animation: float 3s ease-in-out infinite;
+        margin-top: 20px; 
+      }
+      
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" style="color: #00918f;">My Portfolio 🚀</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span>🚀</span> 
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="intro" class="intro-section">
+  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+    <div class="text-container order-1 order-lg-0" style="animation-delay: 0.5s;">
+      <h1 style="color: #00918f; font-weight: 800">Welcome to My Portfolio</h1>
+      <p>
+        Hello! I'm Dhara, an MCA student at Darshan University 🎓 with a passion for all things tech and a love for continuous learning. I’m currently diving into Frontend Development 💻 with HTML, CSS, JavaScript, and Flutter & React. I’m always on the lookout for new tech to explore 🌱 and love collaborating on cool projects.
+      </p>
+      <a href="about.html" class="btn btn-primary mt-4">Learn More</a>
+    </div>
+    <div class="img-container order-0 order-lg-1 mt-4 mt-lg-0" style="animation-delay: 0.5s;">
+      <img src="images/natty webkit/Woman holding laptop with a rocket, Project launch.png" alt="Your Image" class="img-fluid" style="max-width: 100%; height: auto;">
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2024 Dhara M. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
