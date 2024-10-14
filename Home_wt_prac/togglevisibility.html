@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle visibility</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat libero iusto temporibus nostrum sit molestias natus neque delectus voluptatum ad.</p>
+    <button onclick="toggle()">hide</button>
+
+    <script>
+        const myp = document.querySelector('p')
+        const btn = document.querySelector('button')
+        function toggle(){
+            if(myp.style.display != 'none'){
+                myp.style.display = 'none'
+                btn.textContent = "show"
+            }
+            else{
+                myp.style.display = 'grid'
+                btn.textContent = "hide"
+            }
+            
+        }
+    </script>
+</body>
+</html>
