@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form events</title>
+</head>
+<body>
+    <form action="" id="form">
+        <input type="text" placeholder="Enter name" id="name">
+        <input type="radio" value="male" name="gender" id="maleradio">Male
+        <input type="radio" value="female" name="gender" id="femaleradio">Female
+
+        <button type="submit" id="submit">Submit</button>
+        <div>Selected value : <span id="result"></span></div>
+    </form>
+
+    <script>
+        const name = document.getElementById('name')
+        // const male = document.getElementById('maleradio')
+        // const female = document.getElementById('femaleradio')
+        const submit = document.getElementById('submit')
+        const form = document.getElementById('form')
+        const result = document.getElementById('result')
+        const gender = document.getElementsByName('gender');
+
+        // male.addEventListener('click', ()=>{
+        //     result.textContent = gender.value
+        // })
+
+
+        form.addEventListener('submit', function (event){
+            if(name.value.trim() === ''){
+                alert("Name is required!")
+                
+            }
+            else{
+                alert("Form submitted successfully!")
+                event.preventDefault()
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+  </head>
+  <body>
+    <div id="changebg" onclick="changebg()">
+      click on me to change bg of body
+    </div><br><br>
+    <div id="mydivmouse">Mouse : click / double click or hover on me</div><br><br>
+    Mouse event :<div id="resultmouse"> none</div>
+
+   
+
+    <script>
+      function changebg() {
+        const changebg = document.getElementById("changebg");
+        document.body.style.backgroundColor = "pink";
+      }
+
+      const mydiv = document.getElementById("mydivmouse");
+      const result = document.getElementById("resultmouse");
+      function updateevent() {
+      
+        result.textContent = event.type;
+      }
+
+      mydiv.addEventListener("click", updateevent);
+      mydiv.addEventListener("dblclick", updateevent);
+      mydiv.addEventListener("mouseover", updateevent);
+      mydiv.addEventListener("mouseleave", updateevent);
+      mydiv.addEventListener("mouseenter", updateevent);
+
+     
+    </script>
+  </body>
+</html>

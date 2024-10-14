@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        .right{
+            color: green;
+        }
+        .wrong{
+            color: red;
+        }
+        .default{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h4>Login to your account</h4>
+    <input type="text" placeholder="username" id="uname"><br><br>
+    <input type="text" placeholder="password" id="pwd"><br><br>
+    <button type="submit" onclick="login()" id="submitbtn">Login</button><br><br>
+
+    <div id="box"></div>
+    <script>
+        function login(){
+            let uname = document.getElementById('uname').value
+            let pwd = document.getElementById('pwd').value
+            let box = document.getElementById('box')
+
+            if(uname === "" && pwd === ""){
+                box.textContent = "Please enter username & password"
+                box.className="default"
+            }
+            else if(uname != 'admin' || pwd != '123'){
+                box.textContent = "Invalid Username or password !"
+                box.className="wrong"
+            }
+            else if(uname == 'admin' && pwd == '123'){
+                box.textContent = "Logged in successfully !"
+                box.className="right"
+                
+            }
+
+        }
+        
+    </script>
+</body>
+</html>

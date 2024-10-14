@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>key events</title>
+  </head>
+  <body>
+    <div id="mydivkey" tabindex="0">Keyboard : Press or release any key</div>
+    <br /><br />
+    Keyboard event :
+    <div id="resultkey">none</div>
+
+    <script>
+      const result = document.getElementById("resultkey");
+      function updateeventkey() {
+        result.textContent = event.type;
+      }
+
+      document.addEventListener("keypress", updateeventkey);
+      document.addEventListener("keyup", updateeventkey);
+      document.addEventListener("keydown", updateeventkey);
+    </script>
+  </body>
+</html>
