@@ -94,34 +94,8 @@
  }
 
  ::-webkit-scrollbar {
-     width: 8px;
+     display: none;
  }
-
- ::-webkit-scrollbar-thumb {
-     background: lightblue;
-     border: 2px dashed blue;
-     border-radius: 10px;
- }
-
- ::-webkit-scrollbar-track {
-     background: transparent;
- }
-
- html {
-     scrollbar-width: thin;
-     scrollbar-color: lightblue transparent;
- }
-
- ::-moz-scrollbar-thumb {
-     background: repeating-linear-gradient(45deg,
-             blue,
-             blue 5px,
-             lightblue 5px,
-             lightblue 10px);
-     border-radius: 10px;
- }
-
-
 
 
 
@@ -185,8 +159,12 @@
     max-width: 200px;
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: 0.3s;
   }
   
+  .skill-card:hover{
+    max-width: 250px;
+  }
 
   .skill-image {
     height: 200px;

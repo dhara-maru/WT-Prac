@@ -6,52 +6,147 @@
   <title>Portfolio - Projects</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .card {
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+    .card:hover {
+      transform: scale(0.98); /* Shrinks the card slightly on hover */
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .row-equal {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .row-equal .card {
+      flex-grow: 1;
+      margin: 10px;
+    }
+    .list-group-flush{
+      display: flex;
+    }
+  </style>
 </head>
 <body>
 
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1a1a1a;">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skills.html">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">My Portfolio 🚀</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span>🚀</span> 
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
   
 
 <!-- Projects Section -->
-<section id="projects" class="projects-text">
-  <div class="container">
-    <h2>Projects</h2>
-    <p>Some of my projects include:</p>
-    <ul class="list-group">
-      <li class="list-group-item bg-dark text-white">Project 1 - A responsive portfolio website</li>
-      <li class="list-group-item bg-dark text-white">Project 2 - E-commerce application</li>
-      <li class="list-group-item bg-dark text-white">Project 3 - Social media app clone</li>
-    </ul>
+<div class="container my-5">
+  <!-- Project Cards Row -->
+  <div class="row row-equal">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Project 1</h5>
+          <p class="card-text">This is a project description for Project 1. It involves working with various technologies to build an awesome app.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Tech 1</li>
+            <li class="list-group-item">Tech 2</li>
+            <li class="list-group-item">Tech 3</li>
+          </ul>
+          <a href="https://github.com/yourrepo/project1" class="btn btn-primary mt-3">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text">This is a project description for Project 2. Explore the different features and how it works.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Tech 1</li>
+            <li class="list-group-item">Tech 2</li>
+            <li class="list-group-item">Tech 3</li>
+          </ul>
+          <a href="https://github.com/yourrepo/project2" class="btn btn-primary mt-3">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">A brief description of Project 3, highlighting the core components and what it does.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Tech 1</li>
+            <li class="list-group-item">Tech 2</li>
+            <li class="list-group-item">Tech 3</li>
+          </ul>
+          <a href="https://github.com/yourrepo/project3" class="btn btn-primary mt-3">GitHub</a>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+
+  <!-- UI Design Cards Row -->
+  <div class="row row-equal mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="UI Design 1">
+        <div class="card-body">
+          <h5 class="card-title">UI Design 1</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="UI Design 2">
+        <div class="card-body">
+          <h5 class="card-title">UI Design 2</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="UI Design 3">
+        <div class="card-body">
+          <h5 class="card-title">UI Design 3</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
