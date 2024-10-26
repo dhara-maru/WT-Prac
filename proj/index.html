@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Single Page Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Outfit", sans-serif;
+            background-color: #111;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        
+        nav.navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            justify-content: center;
+            background-attachment: fixed;
+            background-color: #0000008f;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #8080803d;
+            z-index: 10; 
+        }
+        a.navbar-brand.navlink {
+            font-size: 14px;
+            color : white
+        }
+        a.navbar-brand.px-3 {
+            color: white;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .landing-section {
+            position: relative;
+            text-align: center;
+            padding: 150px 20px;
+        }
+        .landing-section .background-circle {
+            position: absolute;
+            top: 50%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            width: 609px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent);
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: 0;
+        }
+        .landing-section .background-circle2 {
+            position: absolute;
+            top: 63%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 474px;
+            background: radial-gradient(circle, rgba(255, 0, 170, 0.3), transparent);
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: 0;
+        }
+        .cardsmall{
+            padding: 6px 14px;
+            border: 1px solid purple;
+            background: #390022d4;
+            color: white;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        .landing-section h1 {
+            font-size: 5rem;
+            z-index: 1;
+            position: relative;
+            font-weight: 600;
+            line-height: 86px;
+            background: linear-gradient(to right bottom, #f0efef, #8c8b8b00);
+            background-clip: text; 
+            color: transparent; 
+
+        }
+       .landing-section h5 {
+        line-height: 32px;
+        font-size: 21px;
+        font-weight: 300;
+    }
+        .landing-section .btn-group {
+            margin-top: 20px;
+            z-index: 1;
+            position: relative;
+        }
+        button.btn.btn-outline-light {
+            margin: 0px 50px 0px;
+            border: 1px solid #168f69;
+            background: #18013f80;
+            padding: 8px 22px;
+            border-radius: 64px;
+            box-shadow: 0px 0px 13px #dbdbdb75;
+        }
+        .feature-cards, .sponsor-grid {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .feature-cards .card {
+            background-color: #222;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+            padding: 20px;
+        }
+        .feature-cards img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .sponsor-grid .sponsor-box {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            background-color: #222;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-section {
+            padding: 2rem 0;
+        }
+        .map {
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a class="navbar-brand navlink px-3" href="#">Guide</a>
+    <a class="navbar-brand navlink px-3" href="#">Config </a>
+    <a class="navbar-brand px-3"  href="#">Vite <span><img src="imgs/logo.svg" height="20px" width="20px" alt=""></span></a>
+    <a class="navbar-brand navlink px-3" href="#">Plugins</a>
+    <a class="navbar-brand navlink px-3" href="#">Resources</a>
+</nav>
+
+<!-- Landing Section -->
+<section class="landing-section">
+    
+    <div class="background-circle"></div>
+    <div class="background-circle2"></div>
+    <button class="cardsmall mb-5"><img src="imgs/logo.svg" height="20px" width="20px" alt=""> ViteConf '24 Talks</button>
+    <h1 class="mb-3">THE BUILD TOOL <br>
+        FOR THE WEB</h1>
+        <h5>Vite is a blazing fast frontend build tool powering <br>the next generation of web applications.</h5>
+    <div class="btn-group">
+        <button class="btn btn-outline-light">Learn More</button>
+        <button class="btn btn-outline-light">Get Started</button>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="feature-cards container">
+    <h2>Features</h2>
+    <div class="row g-3">
+        <div class="col-md-4 col-12">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/50" alt="Feature Icon">
+                <hr class="bg-light">
+                <h5>Feature One</h5>
+                <p>Brief description of feature one.</p>
+            </div>
+        </div>
+        <div class="col-md-8 col-12">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/50" alt="Feature Icon">
+                <hr class="bg-light">
+                <h5>Feature Two</h5>
+                <p>Brief description of feature two.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row g-3 mt-3">
+        <div class="col-md-8 col-12">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/50" alt="Feature Icon">
+                <hr class="bg-light">
+                <h5>Feature Three</h5>
+                <p>Brief description of feature three.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/50" alt="Feature Icon">
+                <hr class="bg-light">
+                <h5>Feature Four</h5>
+                <p>Brief description of feature four.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Sponsors Section -->
+<section class="sponsor-grid container">
+    <h2>Our Sponsors</h2>
+    <div class="row justify-content-center">
+        <!-- First row: 8 logos -->
+        <div class="col-12 d-flex justify-content-center flex-wrap">
+            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
+            <!-- Repeat 8 logos in similar fashion -->
+        </div>
+        <!-- Second row: 9 logos -->
+        <div class="col-12 d-flex justify-content-center flex-wrap mt-2">
+            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
+            <!-- Repeat 9 logos in similar fashion -->
+        </div>
+        <!-- Third row: 7 logos -->
+        <div class="col-12 d-flex justify-content-center flex-wrap mt-2">
+            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
+            <!-- Repeat 7 logos in similar fashion -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="contact-section container-fluid">
+    <h2>Contact Us</h2>
+    <div class="row">
+        <div class="col-lg-6 col-12">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 Your Company. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
