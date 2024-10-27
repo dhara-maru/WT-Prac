@@ -42,6 +42,7 @@
         .landing-section {
             position: relative;
             text-align: center;
+            left: 7%;
             padding: 150px 20px;
         }
         .landing-section .background-circle {
@@ -87,7 +88,7 @@
             color: transparent; 
 
         }
-       .landing-section h5 {
+       .smallheading {
         line-height: 32px;
         font-size: 21px;
         font-weight: 300;
@@ -105,21 +106,70 @@
             border-radius: 64px;
             box-shadow: 0px 0px 13px #dbdbdb75;
         }
+
+        h1.mb-3.featureshead {
+            position: relative;
+            left: 17%;
+            font-weight: 500;
+            font-size: 43px;
+            text-shadow: 0px 0px 10px #00bcd463;
+        }
+        h5.smallheading.ftsmallhead {
+            position: relative;
+            left: 17%;
+        }
+
+        .row {
+            position: relative;
+            left: 17%;
+        }
         .feature-cards, .sponsor-grid {
             text-align: center;
             margin: 3rem 0;
         }
         .feature-cards .card {
-            background-color: #222;
-            border: none;
+            background-color: transparent;
+            border: 1px solid #80808030;
+            background: linear-gradient(45deg, black, transparent);
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+            /* box-shadow: 0 0px 10px rgb(74 74 74 / 20%); */
             padding: 20px;
+            transition: 0.4s;
         }
         .feature-cards img {
             width: 50px;
             margin-bottom: 10px;
         }
+        .fticon {
+            width: 81px;
+            border-radius: 7px;
+            height: 82px;
+            border: 1px solid #8080803b;
+            padding: 16px;
+        }
+        #ft1:hover{
+            box-shadow: 0px 0px 14px rgba(255, 255, 0, 0.485);
+
+        }
+        #ft2:hover{
+            box-shadow: 0px 0px 14px rgba(255, 0, 0, 0.485);
+        }
+        #ft3:hover{
+            box-shadow: 0px 0px 14px rgba(255, 0, 242, 0.485);
+        }
+        #ft4:hover{
+            box-shadow: 0px 0px 14px rgba(0, 145, 255, 0.485);
+        }
+        h5.ftheadline {
+            color: white;
+            font-size: 23px;
+            text-shadow: 0px 0px 3px grey;
+            letter-spacing: 0.5px;
+        }
+        p.ftsubline {
+    color: #ffffffe0;
+    font-weight: 300;
+}
         .sponsor-grid .sponsor-box {
             width: 60px;
             height: 60px;
@@ -131,18 +181,7 @@
             align-items: center;
             justify-content: center;
         }
-        .contact-section {
-            padding: 2rem 0;
-        }
-        .map {
-            height: 300px;
-            margin-bottom: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #222;
-        }
+      
     </style>
 </head>
 <body>
@@ -164,49 +203,68 @@
     <button class="cardsmall mb-5"><img src="imgs/logo.svg" height="20px" width="20px" alt=""> ViteConf '24 Talks</button>
     <h1 class="mb-3">THE BUILD TOOL <br>
         FOR THE WEB</h1>
-        <h5>Vite is a blazing fast frontend build tool powering <br>the next generation of web applications.</h5>
+        <h5 class="smallheading">Vite is a blazing fast frontend build tool powering <br>the next generation of web applications.</h5>
     <div class="btn-group">
         <button class="btn btn-outline-light">Learn More</button>
         <button class="btn btn-outline-light">Get Started</button>
     </div>
 </section>
 
+
+
+
+
+
+
 <!-- Features Section -->
 <section class="feature-cards container">
-    <h2>Features</h2>
-    <div class="row g-3">
-        <div class="col-md-4 col-12">
-            <div class="card h-100">
-                <img src="https://via.placeholder.com/50" alt="Feature Icon">
+    <h1 class="mb-3 featureshead">Redefining developer experience</h1>
+        <h5 class="smallheading ftsmallhead">Vite makes web development simple again</h5>
+
+        <div class="row g-5 mt-5">
+        <div class="col-md-4 col-12" >
+            <div class="card h-100"  id="ft1">
+                <div class="fticon" id="ft1">
+                <img src="imgs/viteyellow.svg"></div>
                 <hr class="bg-light">
-                <h5>Feature One</h5>
-                <p>Brief description of feature one.</p>
+                <h5 class="ftheadline">Instant server start</h5>
+                <p class="ftsubline"> On demand file serving over native ESM, no bundling required! </p>
             </div>
         </div>
         <div class="col-md-8 col-12">
-            <div class="card h-100">
-                <img src="https://via.placeholder.com/50" alt="Feature Icon">
+            <div class="card h-100"  id="ft2">
+                <div class="fticon" id="ft2">
+                <img src="imgs/svelte.svg"></div>
                 <hr class="bg-light">
-                <h5>Feature Two</h5>
-                <p>Brief description of feature two.</p>
+                <h5 class="ftheadline">Lightning Fast HMR</h5>
+                <p class="ftsubline"> Hot Module Replacement (HMR) that stays fast regardless of app size.</p>
             </div>
         </div>
     </div>
-    <div class="row g-3 mt-3">
+</div>
+
+
+
+    <div class="row g-5 mt-5">
         <div class="col-md-8 col-12">
-            <div class="card h-100">
-                <img src="https://via.placeholder.com/50" alt="Feature Icon">
+            <div class="card h-100" id="ft3">
+                <div class="fticon" id="ft3">
+                <img src="imgs/marko.svg">
+            </div>
                 <hr class="bg-light">
-                <h5>Feature Three</h5>
-                <p>Brief description of feature three.</p>
+                <h5 class="ftheadline">Rich features</h5>
+                <p class="ftsubline">Out-of-the-box support for Javascript, Typescript, React, VueJS, Vanilla JS, & many more.</p>
+                
             </div>
         </div>
         <div class="col-md-4 col-12">
-            <div class="card h-100">
-                <img src="https://via.placeholder.com/50" alt="Feature Icon">
+            <div class="card h-100" id="ft4">
+                <div class="fticon"  id="ft4">
+                <img src="imgs/solidjs.svg">
+            </div>
                 <hr class="bg-light">
-                <h5>Feature Four</h5>
-                <p>Brief description of feature four.</p>
+                <h5 class="ftheadline">Optimized build</h5>
+                <p class="ftsubline">Pre-confugured Rollup build with library support.</p>
             </div>
         </div>
     </div>
@@ -257,39 +315,7 @@
     </div>
 </section>
 
-<!-- Contact Us Section -->
-<section class="contact-section container-fluid">
-    <h2>Contact Us</h2>
-    <div class="row">
-        <div class="col-lg-6 col-12">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-        </div>
-        <div class="col-lg-6 col-12">
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-outline-light">Send</button>
-            </form>
-        </div>
-    </div>
-</section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2023 Your Company. All Rights Reserved.</p>
-</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
