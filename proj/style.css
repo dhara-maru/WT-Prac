@@ -34,7 +34,7 @@
            
             padding: 150px 20px;
         }
-        .landing-section .background-circle {
+        .background-circle {
             position: absolute;
             top: 50%;
             left: 42%;
@@ -46,7 +46,7 @@
             filter: blur(50px);
             z-index: 0;
         }
-        .landing-section .background-circle2 {
+        .background-circle2 {
             position: absolute;
             top: 63%;
             left: 57%;
