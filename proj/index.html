@@ -42,7 +42,7 @@
         .landing-section {
             position: relative;
             text-align: center;
-            left: 7%;
+           
             padding: 150px 20px;
         }
         .landing-section .background-circle {
@@ -107,21 +107,23 @@
             box-shadow: 0px 0px 13px #dbdbdb75;
         }
 
-        h1.mb-3.featureshead {
+        .featureshead {
             position: relative;
-            left: 17%;
+            left: 7%;
             font-weight: 500;
             font-size: 43px;
-            text-shadow: 0px 0px 10px #00bcd463;
+            text-shadow: 0px 0px 10px #00e2ff;
         }
         h5.smallheading.ftsmallhead {
             position: relative;
-            left: 17%;
+            left:7%;
         }
 
         .row {
             position: relative;
-            left: 17%;
+            left: 7%;
+            margin-top: 5%;
+            /* top: 30%; */
         }
         .feature-cards, .sponsor-grid {
             text-align: center;
@@ -170,18 +172,31 @@
     color: #ffffffe0;
     font-weight: 300;
 }
-        .sponsor-grid .sponsor-box {
-            width: 60px;
-            height: 60px;
-            margin: 5px;
-            background-color: #222;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+.sponsor-grid .sponsor-box {
+    width: 80px;
+    height: 80px;
+    margin: 16px;
+    padding: 48px;
+    /* background-color: #222; */
+    border-radius: 7px;
+    box-shadow: 0 0px 10px rgba(0, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sponsor-box img{height: 50px;
+width: 50px;}
+        .sponsor-grid h2{
+            position: relative;
+            left: 7%;
         }
-      
+
+        h2.mb-3.featureshead {
+            position: relative;
+            margin-top: 170px;
+            /* margin: 100px 0px 120px; */
+            /* margin-bottom: 100px; */
+        }
     </style>
 </head>
 <body>
@@ -270,52 +285,52 @@
     </div>
 </section>
 
-<!-- Our Sponsors Section -->
-<section class="sponsor-grid container">
-    <h2>Our Sponsors</h2>
+<!-- framewrok and tools Section -->
+<section class="sponsor-grid container mt-5 mysponsor">
+    <h2 class="mb-3 featureshead">Powering your favorite <br> frameworks and tools</h2>
     <div class="row justify-content-center">
         <!-- First row: 8 logos -->
         <div class="col-12 d-flex justify-content-center flex-wrap">
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"></div>
+            <div class="sponsor-box"><img src="imgs/marko.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/solidjs.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/svelte.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/viteyellow.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/astrobuild.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/emberjs.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"></div>
         </div>
         <!-- Second row: 9 logos -->
         <div class="col-12 d-flex justify-content-center flex-wrap mt-2">
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"></div>
+            <div class="sponsor-box"><img src="imgs/angular.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/greenvue.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/laravel.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/lightning.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/playwright.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/preactjs.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/reds.svg" alt="Sponsor Logo"></div>
+            
+            <div class="sponsor-box"></div>
 
             
         </div>
         <!-- Third row: 7 logos -->
         <div class="col-12 d-flex justify-content-center flex-wrap mt-2">
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="https://via.placeholder.com/50" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"></div>
+            <div class="sponsor-box"><img src="imgs/redwoodjs.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/solidjs.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/storybook.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"><img src="imgs/remix.svg" alt="Sponsor Logo"></div>
+            <div class="sponsor-box"></div>
             
         </div>
     </div>
 </section>
 
+<!-- free nd open source section starts  -->
 
+<!-- free nd open source section ends  -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
