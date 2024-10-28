@@ -7,10 +7,94 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <style>
-       
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        
+        .navbar {
+            background-color: #343a40; /* Change as needed */
+        }
+
+        .navlink {
+            color: white;
+        }
+
+        .landing-section {
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        .background-circle, .background-circle2 {
+            position: absolute;
+            border-radius: 50%;
+            /* Adjust size for responsiveness */
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .background-circle {
+            top: -50px;
+            left: 10%;
+        }
+
+        .background-circle2 {
+            bottom: -50px;
+            right: 10%;
+        }
+
+        .feature-cards {
+            padding: 50px 20px;
+        }
+
+        .fticon img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .sponsor-box img {
+            max-width: 100%;
+            height: auto;
+            padding: 10px; /* Space around logos */
+        }
+
+        .opensource {
+            padding: 50px 20px;
+        }
+
+        .heartdiv img {
+            max-width: 100px; /* Control the size of the heart icon */
+        }
+
+        .btn-group .btn {
+            margin: 5px; /* Add space between buttons */
+        }
+
+        @media (max-width: 768px) {
+            .landing-section h1 {
+                font-size: 2.5rem; /* Adjust heading size */
+            }
+
+            .landing-section h5 {
+                font-size: 1.2rem; /* Adjust subheading size */
+            }
+
+            .feature-cards h1, .opensource h1 {
+                font-size: 2rem; /* Adjust section headings */
+            }
+
+            .ftheadline {
+                font-size: 1.5rem; /* Feature card headlines */
+            }
+
+            .ftsubline {
+                font-size: 1rem; /* Feature card sublines */
+            }
+        }
     </style>
 </head>
 <body>
@@ -26,80 +110,70 @@
 
 <!-- Landing Section -->
 <section class="landing-section">
-    
     <div class="background-circle"></div>
     <div class="background-circle2"></div>
     <button class="cardsmall mb-5"><img src="imgs/logo.svg" height="20px" width="20px" alt=""> ViteConf '24 Talks</button>
-    <h1 class="mb-3">THE BUILD TOOL <br>
-        FOR THE WEB</h1>
-        <h5 class="smallheading">Vite is a blazing fast frontend build tool powering <br>the next generation of web applications.</h5>
+    <h1 class="mb-3">THE BUILD TOOL <br>FOR THE WEB</h1>
+    <h5 class="smallheading">Vite is a blazing fast frontend build tool powering <br>the next generation of web applications.</h5>
     <div class="btn-group">
         <button class="btn btn-outline-light">Learn More</button>
         <button class="btn btn-outline-light">Get Started</button>
     </div>
 </section>
 
-
-
-
-
-
-
 <!-- Features Section -->
 <section class="feature-cards container">
     <h1 class="mb-3 featureshead">Redefining developer experience</h1>
-        <h5 class="smallheading ftsmallhead">Vite makes web development simple again</h5>
+    <h5 class="smallheading ftsmallhead">Vite makes web development simple again</h5>
 
-        <div class="row g-5 mt-5">
-        <div class="col-md-4 col-12" >
-            <div class="card h-100"  id="ft1">
+    <div class="row g-5 mt-5">
+        <div class="col-md-4 col-12">
+            <div class="card h-100" id="ft1">
                 <div class="fticon" id="ft1">
-                <img src="imgs/viteyellow.svg"></div>
+                    <img src="imgs/viteyellow.svg" alt="Vite Icon">
+                </div>
                 <hr class="bg-light">
                 <h5 class="ftheadline">Instant server start</h5>
-                <p class="ftsubline"> On demand file serving over native ESM, no bundling required! </p>
+                <p class="ftsubline">On demand file serving over native ESM, no bundling required!</p>
             </div>
         </div>
         <div class="col-md-8 col-12">
-            <div class="card h-100"  id="ft2">
+            <div class="card h-100" id="ft2">
                 <div class="fticon" id="ft2">
-                <img src="imgs/svelte.svg"></div>
+                    <img src="imgs/svelte.svg" alt="Svelte Icon">
+                </div>
                 <hr class="bg-light">
                 <h5 class="ftheadline">Lightning Fast HMR</h5>
-                <p class="ftsubline"> Hot Module Replacement (HMR) that stays fast regardless of app size.</p>
+                <p class="ftsubline">Hot Module Replacement (HMR) that stays fast regardless of app size.</p>
             </div>
         </div>
     </div>
-</div>
-
-
 
     <div class="row g-5 mt-5">
         <div class="col-md-8 col-12">
             <div class="card h-100" id="ft3">
                 <div class="fticon" id="ft3">
-                <img src="imgs/marko.svg">
-            </div>
+                    <img src="imgs/marko.svg" alt="Marko Icon">
+                </div>
                 <hr class="bg-light">
                 <h5 class="ftheadline">Rich features</h5>
                 <p class="ftsubline">Out-of-the-box support for Javascript, Typescript, React, VueJS, Vanilla JS, & many more.</p>
-                
             </div>
         </div>
         <div class="col-md-4 col-12">
             <div class="card h-100" id="ft4">
-                <div class="fticon"  id="ft4">
-                <img src="imgs/solidjs.svg">
-            </div>
+                <div class="fticon" id="ft4">
+                    <img src="imgs/solidjs.svg" alt="SolidJS Icon">
+                </div>
                 <hr class="bg-light">
                 <h5 class="ftheadline">Optimized build</h5>
-                <p class="ftsubline">Pre-confugured Rollup build with library support.</p>
+                <p class="ftsubline">Pre-configured Rollup build with library support.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- framewrok and tools Section -->
+<!-- Frameworks and Tools Section -->
 <section class="sponsor-grid container mt-5 mysponsor">
     <h2 class="mb-3 featureshead">Powering your favorite <br> frameworks and tools</h2>
     <div class="row justify-content-center">
@@ -123,63 +197,27 @@
             <div class="sponsor-box"><img src="imgs/lightning.svg" alt="Sponsor Logo"></div>
             <div class="sponsor-box"><img src="imgs/playwright.svg" alt="Sponsor Logo"></div>
             <div class="sponsor-box"><img src="imgs/preactjs.svg" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="imgs/reds.svg" alt="Sponsor Logo"></div>
-            
             <div class="sponsor-box"></div>
-
-            
-        </div>
-        <!-- Third row: 7 logos -->
-        <div class="col-12 d-flex justify-content-center flex-wrap mt-2">
-            <div class="sponsor-box"></div>
-            <div class="sponsor-box"><img src="imgs/redwoodjs.svg" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="imgs/solidjs.svg" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="imgs/storybook.svg" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"><img src="imgs/remix.svg" alt="Sponsor Logo"></div>
-            <div class="sponsor-box"></div>
-            
         </div>
     </div>
 </section>
 
-<!-- free nd open source section starts  -->
-<div class="row opensource text-center">
-    <div class="row">
+<!-- Open Source Section -->
+<section class="opensource container mt-5">
+    <h2 class="mb-3 featureshead">Open Source</h2>
+    <h5 class="smallheading">Vite is open source and publicly available.</h5>
+    <p>Join the community on <a href="#" class="text-decoration-none">GitHub</a></p>
     <div class="heartdiv">
-        <img src="imgs/heart.svg" alt="">
+        <img src="imgs/heart.png" alt="Heart Icon">
     </div>
-</div>
-
-<div class="freeand row">
-    <h1 class="text-center">Free & open source</h1>
-</div>
-<div class="desc"><h6 class="smallheading ftsmallhead">
-    Vite is MIT Licensed and will always be free and open source. This is made possible by our contributors and this company :</div>
-</h6>
-
-<h6 class="row"><p class="text-center">Brought to you by</p></h6>
-<h1 class="row"><img src="imgs/voidzero.D28zATfY.svg" height="400px" width="400px" id="void"></h1>
-</div>
-<!-- free nd open source section ends  -->
-
+</section>
 
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-dark text-light py-4 mt-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 col-md-6 col-sm-12 pb-5">
-                <h5 class="foothead">Start building with Vite | Released under the MIT License.</h5>
-                <p class="footdesc mt-3">Designed by Dhara</p>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center text-md-start pb-5"> <!-- Change text-md-end to text-md-start -->
-                <img src="imgs/logo.svg" alt="Logo" class="logo"> <!-- Add class logo -->
-            </div>
-        </div>
-    </div>
+<footer class="text-center p-3">
+    <p>Vite &copy; 2024</p>
 </footer>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb8K3Q1kA4Df6FJk6gGhtEIo5D9P2g52S0BdU5q5w2fq47D0iG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb8K3Q1kA4Df6FJk6gGhtEIo5D9P2g52S0BdU5q5w2fq47D0iG" crossorigin="anonymous"></script>
 </body>
 </html>
