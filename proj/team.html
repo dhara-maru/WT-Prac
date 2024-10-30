@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vite | WT prj</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .background-circleforteam {
+            position: absolute;
+            top: 50%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            width: 609px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 255, 174, 0.3), transparent);
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: 0;
+        }
+        .background-circle2forteam {
+            position: absolute;
+            top: 63%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 474px;
+            background: radial-gradient(circle, rgba(238, 255, 0, 0.3), transparent);
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: 0;
+        }
+        .card{
+            padding: 30px;
+            transition: 0.3s;
+            color: white;
+
+        }
+        .card:hover{
+            box-shadow: 0px 0px 20px rgba(0, 119, 255, 0.301);
+        }
+        .card-img-top{
+            width: 40%;
+            height: 40%;
+           border-radius: 50%;
+        }
+        .card .btn{
+            background-color: transparent;
+            border: 1px solid hotpink;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .card .btn:hover{
+            background-color: hotpink;
+            border:1px solid transparent;
+            border-radius: 5px;
+        }
+
+
+
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+          }
+          
+          .card {
+            width: 18rem;
+            margin: 10px;
+          }
+          
+        
+          @media (max-width: 992px) {
+            .card {
+              width: 45%;
+            }
+          }
+          
+          @media (max-width: 768px) { 
+            .card {
+              width: 100%;
+            }
+          }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a class="navbar-brand navlink px-3" href="index.html">Intro</a>
+    <a class="navbar-brand navlink px-3" href="team.html">Team</a>
+    <a class="navbar-brand px-3"  href="#">Vite <span><img src="imgs/logo.svg" height="20px" width="20px" alt=""></span></a>
+    <a class="navbar-brand navlink px-3" href="#">Plugins</a>
+    <a class="navbar-brand navlink px-3" href="contact.html">Contact</a>
+</nav>
+
+<!-- Landing Section -->
+<section class="landing-section">
+    
+    <div class="background-circleforteam"></div>
+    <div class="background-circle2forteam"></div>
+    <button class="cardsmall mb-5"><img src="imgs/logo.svg" height="20px" width="20px" alt=""> ViteConf '24 Talks</button>
+    <h1 class="mb-3">Meet the Team</h1>
+        <h5 class="smallheading">The development of Vite is guided by an international team, some of whom have chosen to be featured below.</h5>
+   
+</section>
+<!-- team section starts -->
+<div class="team-section mt-5 mb-5">
+    <div class="card bg-dark">
+      <img src="imgs/t1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ranbir K.</h5>
+        <p class="card-text">Independent Open source developer, creator of Vue.js and Vite.</p>
+        <a href="#" class="btn btn-secondary">💗 Sponsor</a>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <img src="imgs/t2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Jordan Jakhar</h5>
+        <p class="card-text">Core team member of Vite. Independent Team member of Vue.</p>
+        <a href="#" class="btn btn-secondary">💗 Sponsor</a>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <img src="imgs/t4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Murphy B.</h5>
+        <p class="card-text">Team Member of Vite and Svelte. Passionate developer.</p>
+        <a href="#" class="btn btn-secondary">💗 Sponsor</a>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <img src="imgs/t3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ved V. Sahni</h5>
+        <p class="card-text">Passionate by tooling around TypeScript and React.</p>
+        <a href="#" class="btn btn-secondary">💗 Sponsor</a>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <img src="imgs/t4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sid Mehra</h5>
+        <p class="card-text">An open source fullstack developer & Part time freelancer!</p>
+        <a href="#" class="btn btn-secondary">💗 Sponsor</a>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <img src="imgs/t5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ranvijay S.</h5>
+        <p class="card-text">Independent Open source enthusiast & Part time freelancer.</p>
+        <a href="#" class="btn btn-secondary">💗 Sponsor</a>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <img src="imgs/t6.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kabir Thapar</h5>
+        <p class="card-text">Vite core team member. Call me Bunny or green or midori ;)</p>
+        <a href="#" class="btn btn-secondary">💗 Sponsor</a>
+      </div>
+    </div>
+    <div class="card bg-dark">
+      <img src="imgs/t4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Johny Balraj</h5>
+        <p class="card-text">Astro core residency. Svelte and Vite core team member.</p>
+        <a href="#" class="btn btn-secondary">💗 Sponsor</a>
+      </div>
+    </div>
+  </div>
+  <!-- team section ends -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-light py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-6 col-sm-12 pb-5">
+                <h5 class="foothead">Start building with Vite | Released under the MIT License.</h5>
+                <p class="footdesc mt-3">Designed by Dhara</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center text-md-start pb-5">
+                <img src="imgs/logo.svg" alt="Logo" class="logo"> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
