@@ -220,11 +220,11 @@ width: 50px;}
             opacity: 1;
         }
         section.feature-cards.container {
-            left: 0; /* Resetting the left positioning for larger screens */
+            left: 0; 
         }
 
         footer {
-            background-color: #343a40; /* Dark background */
+            background-color: #343a40; 
         }
         
         .foothead {
@@ -238,8 +238,8 @@ width: 50px;}
         }
         
         footer .logo {
-            height: 60px; /* Increase the logo height */
-            margin-left: 10%; /* Add margin to the left */
+            height: 60px; 
+            margin-left: 10%; 
         }
         
 @media (max-width:900px) {

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vite | Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/logo.svg" type="image/svg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .background-circleforteam {
+            position: absolute;
+            top: 50%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            width: 609px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 255, 174, 0.3), transparent);
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: 0;
+        }
+        .background-circle2forteam {
+            position: absolute;
+            top: 63%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 474px;
+            background: radial-gradient(circle, rgba(238, 255, 0, 0.3), transparent);
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: 0;
+        }
+ 
+       /*  table */
+          .table-container {
+            max-width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+          }
+          .table-header {
+            text-align: center;
+            font-size: 1.25rem;
+            padding-bottom: 10px;
+            color: white;
+          }
+          .custom-table {
+            width: 100%;
+            background-color: transparent;
+            color: #ffffff;
+          }
+          .custom-table th, .custom-table td {
+            padding: 15px;
+            vertical-align: middle;
+            border-top: 1px solid #333333;
+          }
+          .custom-table th {
+            color: white;
+            font-weight: 500;
+            font-size: 0.9rem;
+          }
+          .custom-table td {
+            color: #b0b0b0;
+            font-size: 0.85rem;
+          }
+          .time, .duration {
+            color: #72f7ff;
+            font-weight: 500;
+          }
+          .title {
+            color: #ffffff;
+            font-weight: 600;
+          }
+          .speaker {
+            text-align: right;
+            color: #888888;
+          }
+          .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+          }
+
+
+          .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+          }
+      
+          .video-container iframe {
+            width: 100%;
+            max-width: 560px; 
+            height: 315px; 
+          }
+      
+          @media (max-width: 768px) {
+            .video-container iframe {
+              height: calc(100vw * 0.5625);
+            }
+          }
+        </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a class="navbar-brand navlink px-3" href="index.html">Intro</a>
+    <a class="navbar-brand navlink px-3" href="team.html">Team</a>
+    <a class="navbar-brand px-3"  href="#">Vite <span><img src="imgs/logo.svg" height="20px" width="20px" alt=""></span></a>
+    <a class="navbar-brand navlink px-3" href="blog.html">Blogs</a>
+    <a class="navbar-brand navlink px-3" href="contact.html">Contact</a>
+</nav>
+
+<!-- Landing Section -->
+<section class="landing-section">
+    
+    <div class="background-circleforteam"></div>
+    <div class="background-circle2forteam"></div>
+    <button class="cardsmall mb-5"><img src="imgs/logo.svg" height="20px" width="20px" alt=""> Hosted by StackBlitz</button>
+    <h1 class="mb-3">ViteConf 2024</h1>
+        <h5 class="smallheading">43 Talks about the Vite Ecosystem</h5>
+   
+</section>
+
+
+<div class="video-container mb-5">
+    <iframe class="text-center" src="https://www.youtube.com/embed/mWK3Y_1kmaM?si=swPYIlXYTPb_BtK6&amp;controls=0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>
+  </div>
+
+<h1 class="text-center">Talks</h1>
+
+  <!-- table  frameworks  -->
+  <div class="table-container">
+    <div class="table-header">Frameworks</div>
+    <table class="custom-table">
+
+      <tbody>
+        <tr>
+          <td class="time">04:11</td>
+          <td class="duration">17 min</td>
+          <td>
+            <img src="imgs/angular.svg" alt="icon" class="icon">
+            <span class="title">Magically Optimising Your Fonts</span>
+          </td>
+          <td class="speaker">Nithin Molly</td>
+        </tr>
+        <tr>
+          <td class="time">04:28</td>
+          <td class="duration">20 min</td>
+          <td>
+            <img src="imgs/astrobuild.svg" alt="icon" class="icon">
+            <span class="title">Crossing the Network Chasm</span>
+          </td>
+          <td class="speaker">Aparna Balamurali</td>
+        </tr>
+        <tr>
+          <td class="time">04:49</td>
+          <td class="duration">20 min</td>
+          <td>
+            <img src="imgs/emberjs.svg" alt="icon" class="icon">
+            <span class="title">Converging Web Frameworks</span>
+          </td>
+          <td class="speaker">Shruti Hassan</td>
+        </tr>
+        <tr>
+          <td class="time">05:09</td>
+          <td class="duration">14 min</td>
+          <td>
+            <img src="imgs/greenvue.svg" alt="icon" class="icon">
+            <span class="title">Building the Next Meta-Framework for Angular with Analog</span>
+          </td>
+          <td class="speaker">Dhanush</td>
+        </tr>
+        <tr>
+          <td class="time">05:24</td>
+          <td class="duration">13 min</td>
+          <td>
+            <img src="imgs/lightning.svg" alt="icon" class="icon">
+            <span class="title">The Future of the Web is Local First</span>
+          </td>
+          <td class="speaker">Nazariya Nazim</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- table over  -->
+
+
+  <!-- table remarks  -->
+  <div class="table-container">
+    <div class="table-header">Remarks</div>
+    <table class="custom-table">
+      <tbody>
+        <tr>
+          <td class="time">04:11</td>
+          <td class="duration">17 min</td>
+          <td>
+            <img src="imgs/logo.svg" alt="icon" class="icon">
+            <span class="title">Video Game Development with Vite</span>
+          </td>
+          <td class="speaker">Fahadh Faasil</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- table over  -->
+
+
+  
+  <!-- table Production  -->
+  <div class="table-container">
+    <div class="table-header">Production</div>
+    <table class="custom-table">
+      <tbody>
+        <tr>
+          <td class="time">04:11</td>
+          <td class="duration">17 min</td>
+          <td>
+            <img src="imgs/laravel.svg" alt="icon" class="icon">
+            <span class="title">Building the Next Meta-Framework</span>
+          </td>
+          <td class="speaker">Nivin Pauly</td>
+        </tr>
+        <tr>
+            <td class="time">04:11</td>
+            <td class="duration">17 min</td>
+            <td>
+              <img src="imgs/marko.svg" alt="icon" class="icon">
+              <span class="title">Converging Web Frameworks</span>
+            </td>
+            <td class="speaker">Rani Mehra</td>
+          </tr>
+          <tr>
+            <td class="time">04:11</td>
+            <td class="duration">17 min</td>
+            <td>
+              <img src="imgs/preactjs.svg" alt="icon" class="icon">
+              <span class="title">The Future of the Web is Local First</span>
+            </td>
+            <td class="speaker">Johnny Balraj</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- table over  -->
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-light py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-6 col-sm-12 pb-5">
+                <h5 class="foothead">Start building with Vite | Released under the MIT License.</h5>
+                <p class="footdesc mt-3">Designed by Dhara</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center text-md-start pb-5">
+                <img src="imgs/logo.svg" alt="Logo" class="logo"> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
