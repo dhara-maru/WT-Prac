@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup boxes</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Enter age : ")
+        let confirmage = confirm("are you sure about your age or do you wanna go through your birth certificate ?")
+        
+        if(confirmage){
+            if(input <= 18){
+                alert("Age less than 18 are not allowed")
+            }
+            else{
+                document.write("You can vote")
+            }
+        }
+        else{
+            document.write("Go check your age first kid")
+        }
+        
+    </script>
+</body>
+</html>
