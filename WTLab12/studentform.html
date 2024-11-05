@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation in js</title>
+</head>
+<body>
+    <h1>
+        Student registration form
+    </h1>
+    <form action="">
+        <label for="">Full Name</label>
+        <input type="text" class="namet">
+        <label for="">Age</label>
+        <input type="number" class="aget">
+        <label for="">City</label>
+        <input type="text" class="cityt">
+
+        <label for="">Gender</label> <br>
+        <input type="radio" name="gender" id="" value="male">male 
+        <input type="radio" name="gender" id="" value="female">female <br>
+
+        <label for="">Email</label>
+        <input type="email" class="emailt">
+        
+
+        <button type="button" onclick="displaydata()">Submit</button>
+        <p id="result" style="font-weight:bold; margin-top:10px;"></p>
+
+    </form>
+
+    <script>
+        function displaydata(){
+            const name = document.querySelector('.namet').value;
+            const age = document.querySelector('.aget').value;
+            const city = document.querySelector('.cityt').value;
+            const email = document.querySelector('.emailt').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+           
+
+            const emailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(!emailpattern.test(email)){
+                result.textContent = "Please enter a valid email address.";
+                result.style.color = "red";
+                return;
+            }
+
+            document.getElementById('result').textContent = 
+                `Full Name: ${name}\nAge: ${age}\nCity: ${city}\nSelected Gender: ${gender}\n  Email: ${email}`;
+        }
+    </script>
+</body>
+</html>
