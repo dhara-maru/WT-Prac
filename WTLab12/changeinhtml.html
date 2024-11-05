@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change in props of HTML</title>
+</head>
+<body>
+    <p class="myp">Jab tak baithne ko na kaha jaaye tameez se khade raho, yeh police-station hai; tumhare baap ka ghar nahi!</p>
+
+    <button class="myb">Click on me</button>
+
+
+    <script>
+        const myp = document.querySelector(".myp")
+        const myb = document.querySelector('.myb')
+
+        myp.addEventListener('mouseover',()=>{
+            myp.style.cssText = 'padding:10px; background-color:powderblue; font-size:20px; margin:10px; transition:0.3s';
+        })
+
+        myb.addEventListener('click', ()=>{
+            myb.style.cssText='padding:10px; border:none; border-radius:20px; background-color:powderblue; color:black; box-shadow:0px 0px 10px grey; font-size:20px';
+            const newtext = document.createElement('p')
+            newtext.textContent = 'This dialogue was written by Salim-Javed'
+            newtext.style.cssText = 'padding:10px; background-color:powderblue; font-size:20px; margin:10px; transition:0.3s';
+
+            document.body.appendChild(newtext)
+        })
+    </script>
+
+</body>
+</html>
