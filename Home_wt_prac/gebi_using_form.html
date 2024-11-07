@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById using html form</title>
+</head>
+<body>
+    <h1>Random form</h1>
+    <input type="text" id="name" placeholder="Enter name">
+    <input type="text" id="email" placeholder="Enter email">
+    <input type="number" id="age" placeholder="Enter age">
+    <input type="submit" onclick="submitform()" value="Submit">
+    <p class="msg"></p>
+
+    <script>
+    function submitform() {
+        const nameInput = document.getElementById("name");
+        const email = document.getElementById("email")
+        const msgParagraph = document.querySelector(".msg");
+
+        if (nameInput.value.length == 0) {
+            nameInput.style.backgroundColor = "yellow";
+            msgParagraph.textContent = "Name is required";
+        }
+
+        const emailpattern = /\w+@\w+\.\w+/;
+        if(!emailpattern.test(email.value)){
+            msgParagraph.textContent = "Enter a valid email"
+        }
+    }
+    </script>
+</body>
+</html>
