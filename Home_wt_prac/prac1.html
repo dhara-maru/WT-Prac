@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="nm" placeholder="username">
+        <input type="text" id="email" placeholder="enail">
+        <input type="password" id="pwd" placeholder="password">
+        <input type="submit" id="submit" value="submit">
+        <p id="msg"></p>
+
+    </form>
+
+    <script>
+        const nm = document.getElementById("nm")
+        const email = document.getElementById("email")
+        const pwd = document.getElementById("pwd")
+        const submit = document.getElementById("submit")
+        const msg = document.getElementById("msg")
+
+        submit.addEventListener('click', ()=>{
+
+            const emailregex = /\w+@\w+\.\w+/;
+            if(!emailregex.test(email.value)){
+                msg.textContent = "Invalid email"
+            }
+
+
+            nm.value = ""
+            email.value = ""
+            pwd.value = ""
+
+        })
+
+       
+
+    </script>
+</body>
+</html>

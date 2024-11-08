@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="text" placeholder="enter text">
+    <p id="counter"></p>
+    <p id="msg"></p>
+
+    <script>
+        const input = document.querySelector(".text")
+        const counter = document.querySelector("#counter")
+        const msg = document.querySelector("#msg")
+
+        const maxchars = 50;
+
+        input.addEventListener('input', ()=>{
+            const charcount = input.value.length
+            counter.textContent = charcount
+
+            if(charcount >=50){
+                msg.textContent = "50 chars limit reached"
+                counter.textContent = ""
+                input.value = input.value.slice(0, maxchars)
+            }
+        })
+    </script>
+</body>
+</html>
