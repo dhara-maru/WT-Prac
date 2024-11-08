@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #newid{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="p">Water packet</p>
+   
+    <script>
+        const p = document.getElementById('p')
+        const btn = document.body
+
+        btn.addEventListener('keypress', ()=>{
+            p.style.backgroundColor = "pink"
+        })
+
+        btn.addEventListener('keydown', ()=>{
+            p.id = "newid"
+        })
+
+        btn.addEventListener('keyup', ()=>{
+            document.body.style.backgroundColor = "purple"
+        })
+    </script>
+</body>
+</html>
