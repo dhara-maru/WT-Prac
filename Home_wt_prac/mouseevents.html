@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .newcls{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">DA INITIAL TEXT</p>
+    <button id="btn">Click</button>
+
+    <script>
+        const btn = document.getElementById("btn")
+        const t = document.getElementById("text")
+
+        btn.addEventListener('click', ()=>{
+            t.style.color = "blue"
+            t.style.backgroundColor="pink"
+        })
+
+        btn.addEventListener('dblclick', ()=>{
+            t.className = "newcls"
+        })
+
+        btn.addEventListener("mouseover", ()=>{
+          
+            t.backgroundColor = "green"
+        })
+
+        btn.addEventListener('mousemove', ()=>{
+            document.body.style.backgroundColor="grey"
+        })
+
+        btn.addEventListener('mousedown', ()=>{
+            t.style.color = "purple"
+        })
+    </script>
+</body>
+</html>
