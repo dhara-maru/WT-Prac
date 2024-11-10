@@ -1,0 +1,38 @@
+<h2>Troubleshooting</h2>
+<hr>
+<h4 class="p-3">Overview</h4>
+<p class="p-3 m-3"><a href="#">Troubleshooting Vite Issues</a> can help you quickly diagnose and resolve common problems encountered while working with Vite. Whether it's configuration errors or issues with hot module replacement, this guide offers practical solutions to ensure a smoother development experience.</p>
+
+<ol type="1" class="p-3 m-3">
+    <li>
+        <strong>Development Server Not Starting:</strong> If the Vite development server fails to start, check for port conflicts or permission issues. Run the command with elevated permissions or specify an alternative port by using <code>vite --port [port-number]</code>. Ensure no other process is using the default port.
+    </li><br>
+    <li>
+        <strong>Hot Module Replacement (HMR) Not Working:</strong> HMR issues may occur if certain files are excluded from the server's watch list. Make sure the file in question is not ignored in <code>vite.config.js</code> or your project’s <code>.gitignore</code> file. HMR can also break if there are syntax errors, so check for errors in the console.
+    </li><br>
+    <li>
+        <strong>Assets Not Loading Correctly:</strong> If images, CSS, or other assets are not loading as expected, verify the paths used in your code. Use relative paths instead of absolute paths when referencing assets to ensure compatibility across different environments.
+    </li><br>
+    <li>
+        <strong>Plugin Conflicts:</strong> Certain plugins may conflict with each other or with Vite’s native functionalities. If a plugin is causing issues, try disabling it and see if the problem persists. Check the Vite documentation and plugin’s documentation to see if specific configuration adjustments are recommended.
+    </li><br>
+    <li>
+        <strong>Build Errors:</strong> If you encounter errors during the build process, inspect your <code>vite.config.js</code> file for any misconfigurations. Ensure all paths, plugins, and build settings are correctly specified. Additionally, ensure your dependencies are compatible with the latest version of Vite.
+    </li><br>
+    <li>
+        <strong>Environment Variable Issues:</strong> Environment variables may not load correctly if they are not prefixed with <code>VITE_</code>. Ensure that all environment variables follow the <code>VITE_</code> naming convention and are defined in a <code>.env</code> file at the root of your project.
+    </li><br>
+    <li>
+        <strong>Outdated Cache:</strong> Sometimes, cached files can cause unexpected behavior. Try clearing your browser cache and running <code>vite --force</code> to refresh the cache. This can resolve issues caused by outdated modules or dependencies.
+    </li><br>
+    <li>
+        <strong>Compatibility Issues with Older Browsers:</strong> Vite is optimized for modern browsers that support ES modules. If your application must support older browsers, use a polyfill or configure Vite to include support for legacy browsers by adding the <code>vite-plugin-legacy</code> plugin.
+    </li><br>
+    <li>
+        <strong>Slow Rebuild Times:</strong> If rebuilds are taking longer than expected, try adjusting the number of files being watched or excluding certain directories from Vite’s watch list in <code>vite.config.js</code>. Disabling unnecessary plugins can also help speed up rebuild times.
+    </li>
+</ol>
+
+<p class="p-3 m-3">In conclusion, troubleshooting Vite-related issues often involves examining configurations, paths, and dependencies. By following these steps and reviewing Vite’s documentation, you can resolve most problems quickly, ensuring a smoother and more productive development process.</p>
+
+<hr>

@@ -1,0 +1,26 @@
+<h2>Dependency Pre-Bundling</h2>
+<hr>
+<h4 class="p-3">Overview</h4>
+<p class="p-3 m-3"><a href="#">Vite Dependency Pre-Bundling</a> is a mechanism that optimizes the loading of third-party dependencies in your project. By pre-bundling dependencies, Vite minimizes the load time and ensures a smoother development experience, especially for large modules and libraries.</p>
+
+<ul type="disc" class="p-3 m-3">
+    <li>
+        Vite uses <a href="#">esbuild</a> to pre-bundle dependencies, which is significantly faster than traditional bundlers. This process transforms dependencies into optimized ES modules, ready for modern browsers.
+    </li><br>
+    <li>
+        By default, dependencies that are not natively optimized for ES modules are detected and pre-bundled automatically, reducing the overall number of module imports and avoiding repetitive work during development.
+    </li><br>
+    <li>
+        Dependency pre-bundling is especially useful for libraries that consist of many internal modules. Instead of loading each module individually, Vite consolidates them into a single, optimized file.
+    </li>
+</ul>
+
+<p class="p-3 m-3">Vite monitors your dependencies, so if you add a new dependency or modify its version, it automatically re-bundles it during development. This ensures that your project always loads the latest, optimized version of each dependency.</p>
+
+<p class="p-3 m-3">In some cases, you may need to configure the pre-bundling behavior. Vite allows you to specify dependencies that should be excluded or forced into the pre-bundling process, providing more control over which libraries are optimized and how they are handled.</p>
+
+<p class="p-3 m-3">To customize dependency pre-bundling, you can use the <a href="#">optimizeDeps</a> option in the Vite config file. This allows you to specify specific dependencies to include or exclude, helping you fine-tune the pre-bundling process based on your project’s needs.</p>
+
+<p class="p-3 m-3">Overall, Dependency Pre-Bundling in Vite enhances both the development and production build performance by minimizing load times and reducing the complexity of imported modules. It is a core feature that contributes to Vite’s speed and efficiency.</p>
+
+<hr>

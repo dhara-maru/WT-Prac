@@ -1,0 +1,26 @@
+<h2>Static Asset Handling</h2>
+<hr>
+<h4 class="p-3">Overview</h4>
+<p class="p-3 m-3"><a href="#">Vite's Static Asset Handling</a> feature streamlines the process of managing and optimizing static assets in your project, including images, fonts, and other media files. Vite offers efficient ways to handle these assets, ensuring they are optimized for both development and production environments.</p>
+
+<ul type="disc" class="p-3 m-3">
+    <li>
+        Vite supports importing assets directly into JavaScript, CSS, or HTML files, allowing you to treat assets as module imports. This approach simplifies the process of adding assets to your project while ensuring they are properly included in the build.
+    </li><br>
+    <li>
+        Assets such as images and fonts are automatically transformed into optimized versions during the build process. Vite detects and processes these assets, resulting in smaller file sizes and faster load times for your application.
+    </li><br>
+    <li>
+        For assets under a certain size (default 4KB), Vite inlines them as base64-encoded strings, reducing the number of HTTP requests and improving performance. Larger assets are handled as separate files and are included in the output directory.
+    </li>
+</ul>
+
+<p class="p-3 m-3">In addition, Vite allows you to customize asset handling through configuration options. For example, you can adjust the size threshold for inlining or specify custom output paths for assets. This flexibility lets you fine-tune asset handling to suit your project's needs.</p>
+
+<p class="p-3 m-3">Vite’s asset handling is optimized for modern web development. When using assets with hashed filenames, Vite automatically updates references to these assets, ensuring that each build uses the latest version and enabling efficient cache busting.</p>
+
+<p class="p-3 m-3">The <a href="#">public</a> directory in Vite allows you to include assets that should be served as-is, without processing or optimization. Files placed in the public directory are directly accessible and retain their original paths, making it ideal for static resources like icons, manifest files, or documents.</p>
+
+<p class="p-3 m-3">Overall, Vite's Static Asset Handling feature simplifies asset management and enhances performance. By automatically optimizing assets and offering flexible configuration, Vite ensures your project remains fast and efficient from development to production.</p>
+
+<hr>
