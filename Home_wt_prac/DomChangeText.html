@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1 id="title">Hello, World!</h1>
+    <button id="changeText">Change Text</button>
+    <div class="box" style="width: 100px; height: 100px; background: red;"></div>
+    <script>
+        const title = document.querySelector('#title');
+        const button = document.querySelector('#changeText');
+        const box = document.querySelector('.box');
+
+        button.addEventListener('click', () => {
+            title.textContent = 'Text Changed!';
+            box.style.backgroundColor = 'blue';
+        });
+    </script>
+</body>
+</html>
