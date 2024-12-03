@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="fname">Enter Name  &nbsp; &nbsp; &nbsp;</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter First name">
+        <input type="text" name="mname" id="mname" placeholder="Enter Middle name">
+        <input type="text" name="lname" id="lname" placeholder="Enter Last name">
+
+        <br>
+
+        <label for="pass">Enter Password</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter Password">
+        <input type="password" name="rpass" id="rpass" placeholder="Enter Repeat Password">
+        <span>Minimum 8 letters with one special character</span>
+
+        <br>
+
+        <label for="city">Select City</label>
+        <select name="city" id="city">
+            <OPtion>Rajkot</OPtion>
+            <OPtion>Surat</OPtion>
+            <OPtion>Baroda</OPtion>
+            <OPtion>Navsari</OPtion>
+            <OPtion>Valsad</OPtion>
+        </select>
+
+        <label for="gender">Select Gender</label>
+        <input type="radio" name="gender" id="Male"> Male
+        <input type="radio" name="gender" id="Female"> Female
+
+        <br>
+
+        <label for="topic">Favourite Topic</label>
+        <input type="checkbox" name="" id=""> HTML
+        <input type="checkbox" name="" id=""> CSS
+        <input type="checkbox" name="" id=""> JS
+
+        <br>
+
+        <div align="center">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>    
+        </div>
+       
+    </form>
+</body>
+</html>
