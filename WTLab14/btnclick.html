@@ -14,6 +14,24 @@
         $('#btn').click(function(){
             console.log("Button clicked!");
         });
+
+
+        $('#btn').click(()=>{
+            console.log("CLICKEDDDDD ")
+        })
+
+        let str = "Dhara";
+        let str2 = str + "Maru";
+        document.writeln(str2)  //DharaMaru
+        document.writeln(str.charAt(3)) //r
+        document.writeln(str.toLowerCase()) //dhara     
+        document.writeln(str.toUpperCase()) //DHARA
+        document.writeln(str.replace("D", "Z")) //Zhara
+        document.writeln(str.indexOf("a"))  //2
+        document.writeln(str.lastIndexOf("a"))  //4
+        document.writeln(str.substring(1,3))   //ha
+        document.writeln(str.substr(1,3))   //har
+
     </script>
 </body>
 </html>
